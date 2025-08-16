@@ -1,6 +1,6 @@
 .header1 {
   grid-area: header1;
-  background-color: rgba(255, 182, 193, 1); /* rosa claro */
+  background-color: rgba(15, 21, 33, 255);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,72 +11,63 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-}
-
-@media (max-width: 768px) {
-  .header1 {
+  @media (max-width: 768px) {
     flex-direction: column;
-  }
-}
+  };
 
+  
+}
 .title {
   display: flex;
   font-weight: bolder;
   font-size: 5rem;
-  color: rgb(255, 105, 180); /* rosa vibrante */
+  color: rgb(255, 0, 212);
   text-align: center;
   margin-left: 40px;
-}
-
-@media (max-width: 768px) {
-  .title {
+  @media (max-width: 768px) {
     font-size: 5rem;
   }
 }
-
 .header1 svg {
   width: 6rem;
   height: 6rem;
   font-size: 6rem;
   object-fit: cover;
   border-radius: 1rem;
-  color: rgb(255, 105, 180); /* rosa vibrante */
-}
-
-@media (max-width: 768px) {
-  .header1 svg {
+  color: rgba(36, 99, 235, 255);
+  @media (max-width: 768px) {
     width: 12rem;
     height: 12rem;
     font-size: 12rem;
     display: flex;
   }
 }
-
 .cart {
   flex-direction: row;  
   display: flex;
   font-weight: bolder;
   font-size: 3rem;
-  color: rgb(255, 105, 180); /* rosa vibrante */
+  color: rgb(190, 0, 190);
   padding: 1rem;
 }
 
-.cart button {
+.cart button, .cart a, .cart svg {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  color: rgb(255, 105, 180); /* rosa vibrante */
+  color: rgb(190, 0, 190);
   font-size: 3rem;
+  margin-right: 1rem;
 }
 
 .cart p {
   display: inline-block;
-  background-color: rgb(255, 228, 232); /* rosa bem claro */
-  border: 1px solid rgb(255, 105, 180);
+  background-color: rgb(55, 0, 255);
+  border: 1px solid rgb(190, 0, 190);
   margin: 0.5rem;
   padding: 5px;
   border-radius: 1rem;
-  color: rgb(255, 105, 180);
+  color: rgb(37, 100, 234);
   font-size: 1.5rem;
   height: 35px;
 }
