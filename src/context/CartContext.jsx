@@ -28,7 +28,7 @@ export function CartProvider({ children }) {
   const [error, setError] = useState(null);
 
   let mounted = true;
-  
+
   useEffect(() => {
   if (!session) {
     setProducts([]);
@@ -57,7 +57,6 @@ export function CartProvider({ children }) {
       if (mounted) setProducts([]);
     }
   }
-
   async function fetchCartSupabase() {
     if (!session || !session.user || !session.user.id) {
       if (mounted) setCart([]);
@@ -99,7 +98,7 @@ export function CartProvider({ children }) {
   };
 }, [session]);
 
-const removeProductFromDB = async (id) =>{
+  const removeProductFromDB = async (id) =>{
 
        try {
         const { error } = await supabase.from("product_2v").delete().eq("id", id);
@@ -112,7 +111,6 @@ const removeProductFromDB = async (id) =>{
         console.error("Exceção ao remover produto do DB:", err);
       }
     };
-
   const updateProduct = async (updated) => {
     setProducts((prev) => prev.map((p) => (p.id === updated.id ? { ...p, ...updated } : p)));
 

@@ -12,7 +12,7 @@
 
 .div {
   background-color: var(--primary-muted);
-  color: var(--primary-light);
+  color: var(blue);
   box-shadow: 0 0 1rem var(--primary-light);
   padding: 3rem;
   /*margin: 3rem 5rem;*/
