@@ -3,15 +3,16 @@
     height: auto;
     padding-bottom: 5rem;
     background: linear-gradient(
-    to bottom,
-    rgba(15, 21, 33, 255) 0%,
-    rgba(10, 20, 117, 255) 100%
-  );
+        to bottom,
+        rgba(15, 21, 33, 255) 0%,
+        rgba(255, 182, 193, 255) 100%
+    );
     font-size: 3rem;
-    color: rgb(37, 100, 234);
+    color: #ff69b4;
     min-height: 100vh;
     margin-top: 10rem;
 }
+
 .main {
     display: flex;
     flex-wrap: wrap;
@@ -20,50 +21,59 @@
     gap: 2rem;
     padding: 3rem;
     padding-top: 10rem;
-
 }
 
 .productCard {
-    background-color: rgba(15, 21, 33, 255);
+    background-color: #ffc0cb;
     padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     width: 300px;
     text-align: center;
-}   
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 0.6s forwards;
+}
+
+.productCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    background-color: #ffb6c1;
+}
 
 .productTitle {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: rgb(37, 100, 234);
+    color: #ff1493;
 }
 
 .productDescription {
-    font-size: 5rem;
+    font-size: 1.2rem;
     margin-bottom: 1.5rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: #fff0f5;
 }
 
 .productPrice {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
-    color: rgb(37, 100, 234);
+    color: #ff1493;
+    font-weight: bold;
 }
 
 .productButton {
-    background-color: rgb(37, 100, 234);
-    color: white;
+    background-color: #ff69b4;
+    color: #fff0f5;
     padding: 0.5rem 1rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 1.2rem;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.button:hover {
-    background-color: rgba(35, 41, 53, 255);
-    transform: scale(1.05); 
+.productButton:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
 }
 
 .carrinho {
@@ -87,17 +97,33 @@
 }
 
 .search input {
-    background-color: rgb(17, 31, 80);
-    border: 1px solid rgb(32, 59, 156);
-    color: rgb(37, 100, 234);
+    background-color: #ffe4ec;
+    border: 1px solid #ff69b4;
+    color: #ff1493;
     font-size: 2rem;
     padding: 0.5rem;
+    border-radius: 6px;
 }
 
 .search button {
-    background-color: rgb(17, 31, 80);
-    border: 1px solid rgb(32, 59, 156);
-    color: rgb(37, 100, 234);
+    background-color: #ffb6c1;
+    border: 1px solid #ff69b4;
+    color: #ff1493;
     font-size: 2rem;
     padding: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search button:hover {
+    background-color: #ff69b4;
+    transform: scale(1.05);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }

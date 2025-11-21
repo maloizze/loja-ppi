@@ -13,7 +13,7 @@
   min-height: 100vh;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-template-rows: repeat(auto-fit, min-content);
-  color: rgb(37, 100, 234);
+  color: rgb(234, 37, 218);
   grid-template-areas:
     "title title"
     "main checkout";
