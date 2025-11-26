@@ -3,12 +3,12 @@
     height: auto;
     padding-bottom: 5rem;
     background: linear-gradient(
-        to bottom,
-        rgba(15, 21, 33, 255) 0%,
-        rgba(255, 182, 193, 255) 100%
+        to top,
+        #ffe4ec 0%,               /* rosa claro */
+        rgba(255, 182, 193, 1) 100% /* rosa suave */
     );
     font-size: 3rem;
-    color: #ff69b4;
+    color: #ff1493; /* rosa escuro */
     min-height: 100vh;
     margin-top: 10rem;
 }
@@ -24,10 +24,10 @@
 }
 
 .productCard {
-    background-color: #ffc0cb;
+    background-color: rgba(255, 182, 193, 0.9); /* rosa suave */
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
     width: 300px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
@@ -37,20 +37,20 @@
 
 .productCard:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-    background-color: #ffb6c1;
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.5);
+    background-color: #ffb6c1; /* rosa médio */
 }
 
 .productTitle {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #ff1493;
+    color: #ff1493; /* rosa escuro */
 }
 
 .productDescription {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
-    color: #fff0f5;
+    color: #fff0f5; /* rosa muito claro */
 }
 
 .productPrice {
@@ -61,7 +61,7 @@
 }
 
 .productButton {
-    background-color: #ff69b4;
+    background-color: #ff69b4; /* rosa vivo */
     color: #fff0f5;
     padding: 0.5rem 1rem;
     border: none;
@@ -72,7 +72,7 @@
 }
 
 .productButton:hover {
-    background-color: #ff1493;
+    background-color: #ff1493; /* rosa escuro */
     transform: scale(1.05);
 }
 
